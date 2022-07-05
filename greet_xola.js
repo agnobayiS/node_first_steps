@@ -7,6 +7,11 @@ import greet from './greet.js'
 
 const styledMessage = chalk.bgGreen.black(greet('Xola'));
 console.log(styledMessage)
+
+
+
+
+
 import figlet from "figlet";
 
 figlet('greet_Xola.js', function(err, data) {
@@ -15,7 +20,8 @@ figlet('greet_Xola.js', function(err, data) {
         console.dir(err);
         return;
     }
-    console.log(data)
+    const styledMessage = chalk.bgGreen.black(data);
+    console.log(styledMessage)
 });
 
 
