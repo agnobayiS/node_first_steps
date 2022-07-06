@@ -40,5 +40,6 @@ figlet.text('Boo!', {
         console.dir(err);
         return;
     }
-    console.log(data);
+    const styledMessage = chalk.bgYellow.black(data);
+    console.log(styledMessage);
 });
